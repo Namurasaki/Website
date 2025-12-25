@@ -12,11 +12,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<style>
-    		#banner + section .posts article > a.image img {
-      			width: 100%;
-      			height: 320px;
-      			object-fit: cover;
-    		}
+    		/* Default (for desktop/tablets) */
+  			.posts article > a.image img {
+    		width: 100%;
+    		height: 220px;
+    		object-fit: cover;
+  		  }
+
+  			/* For phones (screen width 600px or smaller) */
+  			@media (max-width: 600px) {
+ 		   .posts article > a.image img {
+  		    height: 150px; /* smaller height on phone */
+  		  }
+		}
   		</style>
 	</head>
 	<body class="is-preload">
@@ -202,6 +210,7 @@
 	</body>
 
 </html>
+
 
 
 
