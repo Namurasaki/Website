@@ -98,7 +98,7 @@
 						</div>
 					</div>
 				
-					<div id="sidebar-placeholder"></div>
+					{% include sidebar.html %}
 			</div>
 
 		<!-- Scripts -->
@@ -108,17 +108,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<script>
-			  fetch("sidebar.html")
-				.then(res => res.text())
-				.then(html => {
-				  document.getElementById("sidebar-placeholder").innerHTML = html;
-				});
-			</script>
-
 	</body>
 
 </html>
+
 
 
 
