@@ -99,13 +99,6 @@
 					</div>
 				
 					<div id="sidebar-placeholder"></div>
-								<script>
-								  fetch("sidebar.html")
-								    .then(res => res.text())
-								    .then(html => {
-								      document.getElementById("sidebar-placeholder").innerHTML = html;
-								    });
-								</script>
 			</div>
 
 		<!-- Scripts -->
@@ -115,9 +108,18 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+			  fetch("sidebar.html")
+				.then(res => res.text())
+				.then(html => {
+				  document.getElementById("sidebar-placeholder").innerHTML = html;
+				});
+			</script>
+
 	</body>
 
 </html>
+
 
 
 
