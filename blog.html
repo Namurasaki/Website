@@ -1,1 +1,273 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blog | Neilson Huang's Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Neilson Huang's blog — thoughts on math, olympiads, school life, and more." />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
+			/* ── Blog post cards ── */
+			.blog-posts {
+				display: flex;
+				flex-direction: column;
+				gap: 2.5em;
+			}
+
+			.blog-card {
+				display: flex;
+				gap: 2em;
+				background: rgba(255,255,255,0.03);
+				border: 1px solid rgba(255,255,255,0.06);
+				border-radius: 8px;
+				padding: 1.8em;
+				transition: transform 0.25s ease, box-shadow 0.25s ease;
+			}
+			.blog-card:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+			}
+
+			.blog-card .blog-thumb {
+				flex-shrink: 0;
+				width: 220px;
+				height: 160px;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+			.blog-card .blog-thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.3s ease;
+			}
+			.blog-card:hover .blog-thumb img {
+				transform: scale(1.05);
+			}
+
+			.blog-card .blog-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.blog-card .blog-info .blog-date {
+				font-size: 0.85em;
+				opacity: 0.6;
+				margin-bottom: 0.4em;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+			}
+			.blog-card .blog-info h3 {
+				margin: 0 0 0.5em 0;
+			}
+			.blog-card .blog-info h3 a {
+				text-decoration: none;
+				border-bottom: none;
+			}
+			.blog-card .blog-info p {
+				margin: 0 0 0.8em 0;
+				opacity: 0.85;
+				line-height: 1.6;
+			}
+			.blog-card .blog-info .blog-tags {
+				display: flex;
+				gap: 0.5em;
+				flex-wrap: wrap;
+			}
+			.blog-card .blog-info .blog-tags span {
+				font-size: 0.78em;
+				padding: 0.25em 0.7em;
+				border-radius: 20px;
+				background: rgba(243, 166, 131, 0.15);
+				color: #f3a683;
+				letter-spacing: 0.03em;
+			}
+
+			.blog-read-more {
+				font-size: 0.9em;
+				font-weight: 600;
+			}
+
+			/* Responsive: stack on small screens */
+			@media (max-width: 736px) {
+				.blog-card {
+					flex-direction: column;
+				}
+				.blog-card .blog-thumb {
+					width: 100%;
+					height: 200px;
+				}
+			}
+
+			/* Empty state */
+			.blog-empty {
+				text-align: center;
+				padding: 3em;
+				opacity: 0.6;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Neilson Huang's</strong> Page</a>
+									<ul class="icons">
+										<span style="margin-right:10px;" class="logo">Contact Me:</span>
+										<li><a href="https://www.instagram.com/neilson_h08/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="mailto:neilson.ng@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Blog Content -->
+								<section>
+									<header class="main">
+										<h1>Blog</h1>
+									</header>
+									<p>Welcome to my blog! Here I share my thoughts, experiences, and things I find interesting.</p>
+
+									<div class="blog-posts" id="blog-posts-container">
+										<!-- Posts are rendered here by JavaScript -->
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="cv.html">CV</a></li>
+										<li><a href="blog.html">Blog</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>You can talk to me either through my email or you can just dm me on instagram. </p>
+								<ul class="contact">
+								  <li class="icon solid fa-envelope">
+								    <a href="mailto:neilson.ng@gmail.com">neilson.ng@gmail.com</a>
+								  </li>
+								  <li class="icon brands fa-instagram">
+								    <a href="https://www.instagram.com/neilson_h08/" target="_blank">@neilson_h08</a>
+								  </li>
+								</ul>
+
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Neilson 2025. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+			/*
+			 * ═══════════════════════════════════════════════════════
+			 *  HOW TO ADD A NEW BLOG POST:
+			 *
+			 *  1. Create a new HTML file in the "posts/" folder
+			 *     (copy posts/sample-post.html as a template).
+			 *
+			 *  2. Add a new entry to the BLOG_POSTS array below.
+			 *     Put the newest post FIRST (at the top of the array).
+			 *
+			 *  That's it! The blog page will automatically show it.
+			 * ═══════════════════════════════════════════════════════
+			 */
+			const BLOG_POSTS = [
+				// ── Newest posts go at the top ──
+				{
+					title:   "Welcome to My Blog!",
+					date:    "July 15, 2026",
+					excerpt: "This is my first blog post. I'll be sharing my thoughts on math olympiads, school life, organizations, and everything in between. Stay tuned!",
+					tags:    ["Personal", "Announcement"],
+					image:   "images/pic11.jpg",
+					url:     "posts/welcome.html"
+				},
+
+				// ── Add more posts above this line ──
+				// Example:
+				// {
+				//     title:   "My Post Title",
+				//     date:    "August 1, 2026",
+				//     excerpt: "A short summary of the post...",
+				//     tags:    ["Math", "Olympiad"],
+				//     image:   "images/some-image.jpg",   ← optional, remove for no image
+				//     url:     "posts/my-post.html"
+				// },
+			];
+
+			// ── Render posts ──
+			(function renderBlogPosts() {
+				const container = document.getElementById('blog-posts-container');
+
+				if (BLOG_POSTS.length === 0) {
+					container.innerHTML = '<div class="blog-empty"><p>No posts yet — check back soon!</p></div>';
+					return;
+				}
+
+				container.innerHTML = BLOG_POSTS.map(function(post) {
+					const thumbHTML = post.image
+						? '<div class="blog-thumb"><img src="' + post.image + '" alt="' + post.title + '" /></div>'
+						: '';
+					const tagsHTML = (post.tags || [])
+						.map(function(t) { return '<span>' + t + '</span>'; })
+						.join('');
+
+					return ''
+						+ '<article class="blog-card">'
+						+   thumbHTML
+						+   '<div class="blog-info">'
+						+     '<div class="blog-date">' + post.date + '</div>'
+						+     '<h3><a href="' + post.url + '">' + post.title + '</a></h3>'
+						+     '<p>' + post.excerpt + '</p>'
+						+     (tagsHTML ? '<div class="blog-tags">' + tagsHTML + '</div>' : '')
+						+   '</div>'
+						+ '</article>';
+				}).join('');
+			})();
+			</script>
+
+	</body>
+
+</html>
